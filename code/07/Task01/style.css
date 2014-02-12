@@ -1,0 +1,43 @@
+* { padding: 0; margin: 0; }
+
+body { font: 15px/1.5 "Trebuchet MS", sans-serif; overflow: hidden; }
+
+#container { width: 800px; padding: 10px; margin: 0 auto; border: 2px solid gray; }
+
+header { padding: 20px; background-color: lightgray; }
+
+section { overflow: hidden; margin: 10px 0; }
+section .content, section .sidebar { float: left; margin: 0; }
+section .content { width: 69%; background-color: lightgray; margin-right: 1%; }
+section .sidebar { width: 30%; background-color: lightgray; }
+section .box { padding: 20px; }
+section h2 { font-size: 1.2em; }
+
+footer { padding: 20px; background-color: lightgray; }
+
+body > div[spec="nyan"]{ position: relative; margin: 15px 0}
+div.nyanleft{
+	animation: nyanLeft 10s linear infinite;
+	-webkit-animation: nyanLeft 10s linear infinite;
+}
+div.nyanright{
+	animation: nyanRight 10s linear infinite;
+	-webkit-animation: nyanRight 10s linear infinite;
+}
+
+@keyframes nyanRight{
+	0%   {left: -15%;}
+	100% {left: 100%;}
+}
+@keyframes nyanLeft{
+	0%    {left: 100%;}
+	100%  {left: -15%;}
+}
+@-webkit-keyframes nyanRight{
+	0%   {left: -15%;}
+	100% {left: 100%;}
+}
+@-webkit-keyframes nyanLeft{
+	0%    {left: 100%;}
+	100%  {left: -15%;}
+}
