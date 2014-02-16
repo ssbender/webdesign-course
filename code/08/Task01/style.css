@@ -1,0 +1,66 @@
+body {
+    font:15px/1.5 "Trebuchet MS", sans-serif;
+}
+nav {
+    margin:100px auto;
+    text-align:center;
+}
+nav ul {
+    background:#eb7501;
+    background:linear-gradient(top, #eb7501 0%, #f19e4d 100%);
+    background:-moz-linear-gradient(top, #eb7501 0%, #f19e4d 100%);
+    background:-webkit-linear-gradient(top, #eb7501 0%, #f19e4d 100%);
+    box-shadow:0px 0px 15px;
+    padding:0 20px;
+    border-radius:10px;
+    list-style:none;
+    position:relative;
+    display:inline-table;
+}
+nav ul li {
+    float:left;
+}
+nav ul li:hover {
+    background:#cd3700;
+    background:linear-gradient(top, #cd3700 0%, #cd3700 40%);
+    background:-moz-linear-gradient(top, #cd3700 0%, #cd3700 40%);
+    background:-webkit-linear-gradient(top, #cd3700 0%, #cd3700 40%);
+}
+nav ul li:hover > ul {
+    display:block;
+}
+nav ul li:hover a {
+    color:#fff;
+}
+nav ul li a {
+    display:block;
+    padding:25px 40px;
+    color:#fff;
+    text-decoration:none;
+}
+nav ul ul {
+    background:#cd3700;
+    border-radius:0px;
+    padding:0;
+    position:absolute;
+    top:100%;
+    display:none;
+}
+nav ul ul li {
+    float:none;
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff;
+    position:relative;
+}
+nav ul ul li a {
+    padding:15px 40px;
+    color:#fff;
+}
+nav ul ul li a:hover {
+    background:#993300;
+}
+nav ul ul ul {
+    position:absolute;
+    left:100%;
+    top:0;
+}

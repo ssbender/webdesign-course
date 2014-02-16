@@ -1,0 +1,17 @@
+* { padding:0; margin:0 }
+
+#container {
+    width:880px;
+    margin:40px auto;
+}
+ul.gallery img {
+    width:200px;
+}
+ul.gallery {
+    list-style:none;
+}
+ul.gallery li a {
+    position:relative;
+    float:left;
+    padding:10px;
+}
